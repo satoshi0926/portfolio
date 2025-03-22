@@ -1,0 +1,350 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  background-color: #f0f0f0;
+  color: #000;
+  font-size: 0.875rem;
+}
+a {
+    color: #000;
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+li {
+    list-style: none;
+}
+.wrapper {
+    width: 100%;
+    max-width: 1032px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+/* header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.inner {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 100px;
+}
+.inner .logo a {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: normal;
+    letter-spacing: 11px;
+}
+.inner .link-list {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.inner .link-list li {
+    margin-right: 30px;
+}
+.inner .link-list li:last-child(){
+    margin-right: 0;
+}
+.contact {
+    text-align: center;
+    align-items: center;
+    width: 200px;
+    background-color: #000;
+    height: 80px;
+    color: #fff;
+    padding: 30px 0;
+}
+
+/* mainvisual */
+.mainvisual img {
+    object-fit: cover;
+    width: 100%;
+    height: calc(100vh - 80px);
+}
+
+/* news */
+#news {
+    margin-top: 80px;
+}
+.section-title {
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 70px;
+}
+.section-title::after {
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+    display: block;
+}
+.section-title .en {
+    display: block;
+    letter-spacing: 0.3em;
+    margin-bottom: 10px;
+}
+.section-title .ja {
+    display: block;
+    font-size: 0.875rem;
+    margin-bottom: 30px;
+}
+
+#news .contents {
+    display: flex;
+    justify-content: space-between;
+}
+#news .contents li {
+    width: calc(100% / 3);
+    border-right: solid 1px #000;
+    padding: 10px 20px;
+}
+#news .contents li:first-child {
+    padding: 10px 0px;
+}
+#news .contents li:last-child {
+    border-right: none;
+}
+#news .contents .date-area span {
+    background-color: #000;
+    color: #fff;
+    margin-left: 10px;
+    padding: 0px 4px;
+}
+#news .contents p {
+    margin-top: 15px;
+}
+
+/* about */
+#about {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#about .img {
+    width: 50%;
+}
+#about .img img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+#about .contents {
+    margin-left: 80px;
+    margin-top: 150px;
+}
+#about .section-title .en {
+    font-size: 2.0rem;
+}
+#about .contents p {
+    line-height: 30px;
+}
+
+/* business */
+#business .section-title .en {
+    font-size: 2.1rem;
+}
+#business .contents {
+    display: flex;
+    padding: 0 10%;
+    justify-content: space-between;
+}
+#business p {
+    font-weight: bold;
+}
+#business .left {
+    width: 46%;
+    margin-top: 100px;
+}
+#business .right {
+    width: 46%;
+}
+#business .internet, #business .social {
+    margin-top: 50px;
+}
+
+/* company */
+#company {
+    display: flex;
+    height: 750px;
+    margin-top: 100px;
+    position: relative;    
+}
+#company .contents {
+    width: 55%;
+    background-color: #fff;
+    padding:  100px 8% 100px 6%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#company .section-title .en {
+    font-size: 2.1rem;
+}
+#company .contents .info{
+    display: flex;
+    flex-wrap: wrap;
+}
+#company .contents .info dt {
+    width: 20%;
+    margin-top: 10px;
+}
+#company .contents .info dd {
+    width: 80%;
+    margin-top: 10px;
+}
+#company .contents .info dd.business {
+    margin-left: 20%;
+}
+#company .img {
+    width: 55%;
+    position: absolute;
+    top: 115px;
+    right: 0;
+}
+#company .img img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* footer */
+#footer {
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+#footer .contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+#footer .contents .logo {
+    font-size: 1.8rem;
+    font-weight: normal;
+    letter-spacing: 11px;
+}
+#footer .copyright {
+    font-size: 0.625rem;
+}
+
+/* スマホ用 */
+@media screen and (max-width: 900px) {
+    .section-title {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    /* header */
+    #header {
+        margin-bottom: 10px;
+    }
+    #header .inner {
+        flex-direction: column;
+        align-items: start;
+    }
+    .logo {
+        width: 80px;
+        margin: 8px 0;
+    }
+    .inner .link-list {
+        margin-left: 0px;
+    }
+    .contact {
+        display: none;
+    }
+
+    /* news */
+    #news .contents {
+        flex-direction: column;
+    }
+    #news .contents li {
+        width: 100%;
+        padding: 30px 0 0 0;   
+        border: none;
+    }
+
+    /* about */
+    #about {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    #about .img {
+        width: 100%;
+    }
+    #about .contents {
+        width: 100%;
+        padding: 0 16px;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    /* business */
+    #business {
+        margin-top: 30px;
+    }
+    #business .contents {
+        flex-direction: column;
+        padding: 0;
+    }
+    #business .left {
+        width: 100%;
+        margin-top: 0;
+    }
+    #business .right {
+        width: 100%;
+    }
+    #business .internet, #business .social {
+        margin-top: 0;
+    }
+    #business .contents p {
+        margin-bottom: 10px;
+    }
+    #business .contents img {
+        margin-bottom: 10px;
+    }
+
+    /* company */
+    #company {
+        position: static;
+        flex-direction: column;
+        height: auto;
+    }
+    #company .contents {
+        position: static;
+        width: 100%;
+        margin-bottom: 10px;
+        padding:  30px 8% 30px 6%;
+    }
+    #company .img {
+        position: static;
+        width: 100%;
+    }
+    #company .contents .info dt:first-of-type {
+        margin-top: 0;
+    }
+    #company .contents .info dt {
+        margin-top: 20px;
+        width: 100%;
+    }
+    #company .contents .info dd {
+        width: 100%;
+        margin-left: 10px;
+    }
+    #company .contents .info dd.business {
+        margin-left: 10px;
+    }
+   
+}
