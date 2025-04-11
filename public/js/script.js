@@ -8,6 +8,7 @@ $(function () {
     var target = $(href == "#" || href == "" ? "html" : href);
     var position = target.offset().top - navHeight;
     $("html, body").animate({ scrollTop: position, }, 300, "swing");
+    console.log("click");
     return false;
   });
 
@@ -15,6 +16,8 @@ $(function () {
   $("#js-page-top").on("click", function () {
     $("body,html").animate({ scrollTop: 0, }, 300);
     return false;
+
+    console.log("page-top");
   });
 
 });
