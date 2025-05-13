@@ -57,7 +57,7 @@ li {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-image: url('../img/mainvisual.jpg');
+  background-image: url('../img/mainvisual.webp');
   background-size: cover;
   background-position: center;
 }
@@ -94,7 +94,7 @@ li {
   margin-top: 20px;
 }
 #menu .fixed-bg {
-  background-image: url('../img/menu.jpg');
+  background-image: url('../img/menu.webp');
 }
 #menu .contents {
   display: flex;
@@ -129,7 +129,7 @@ li {
   margin-top: 100px;
 }
 #about .fixed-bg {
-  background-image: url('../img/about.jpg');
+  background-image: url('../img/about.webp');
 }
 #about .contents {
   text-align: center;
@@ -216,7 +216,7 @@ li {
   margin-top: 70px;
 }
 #location .fixed-bg {
-  background-image: url('../img/location.jpg');
+  background-image: url('../img/location.webp');
 }
 #location .contents {
   margin-top: 60px;
