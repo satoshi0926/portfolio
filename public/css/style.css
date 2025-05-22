@@ -348,13 +348,16 @@ li {
   text-align: center;
 }
 
+.contact-item {
+  color: #000;
+}
+
 .contact-item:not(:last-child) {
   margin-right: 10px;
 }
 
 .contact-text {
   margin-top: 10px;
-  color: #000;
 }
 /*--------------------------------
  ページトップ
