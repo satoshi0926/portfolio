@@ -33,7 +33,7 @@ main {
 section#function {
   margin-top: 40px;
 }
-section#function div:first-child {
+section#function .box {
  margin-left: 15px; 
 }
 
