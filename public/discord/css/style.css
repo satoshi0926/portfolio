@@ -63,11 +63,11 @@ section#file dt {
 }
 
 /* リンク */
-#section#link {
+section#link {
   text-align: center;
   margin: 80px 0;
 }
-#section#link a {
+section#link a {
   background-color: #fff3b0;
   padding: 20px 30px;
   border-radius: 5px;
