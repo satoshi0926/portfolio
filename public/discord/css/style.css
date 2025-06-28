@@ -72,9 +72,12 @@ section#link a {
   border-radius: 5px;
   font-size: 1.2em;
 }
-section#link a.discord {
+section#link .discord a {
   background-color: #fff3b0;
 }
-section#link a.github {
+section#link .github {
+  margin-top: 50px;
+}
+section#link .github a {
   background-color: #cfdff5;
 }
