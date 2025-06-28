@@ -43,3 +43,15 @@ dt, dd {
   font-family: "Yu Gothic", "Meiryo", sans-serif;
   font-weight: normal;
 }
+dt {
+  width: 120px;
+  padding-left: 30px;
+  border-radius: 10px;
+}
+
+section#function dt {
+   background-color: #e0e0e0;
+}
+section#files dt {
+  background-color: #cfdff5;
+}
