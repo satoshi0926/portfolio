@@ -42,7 +42,6 @@ dt, dd {
   font-weight: normal;
 }
 dt {
-  width: 120px;
   padding-left: 30px;
   border-radius: 10px;
 }
@@ -62,12 +61,14 @@ section#function .box {
 }
 section#function dt {
    background-color: #e0e0e0;
+   width: 280px;
 }
 
 
 /* ファイル情報 */
 section#file dt {
   background-color: #cfdff5;
+  width: 280px;
 }
 
 /* リンク */
