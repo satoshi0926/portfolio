@@ -47,11 +47,19 @@ dt {
   border-radius: 10px;
 }
 
+/* 概要 */
+section#about .screenshot {
+  text-align: center;
+}
+section#about .screenshot img {
+  width: 621px;
+  height: 513px;
+}
+
 /* 機能一覧 */
 section#function .box {
  margin-left: 15px; 
 }
-
 section#function dt {
    background-color: #e0e0e0;
 }
