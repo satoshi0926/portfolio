@@ -68,8 +68,13 @@ section#link {
   margin: 70px 0;
 }
 section#link a {
-  background-color: #fff3b0;
   padding: 20px 30px;
   border-radius: 5px;
   font-size: 1.2em;
+}
+section#link a.discord {
+  background-color: #fff3b0;
+}
+section#link a.github {
+  background-color: #cfdff5;
 }
