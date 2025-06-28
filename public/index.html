@@ -253,13 +253,32 @@
               <div class="works-img"><img src="img/discord.webp" alt="ChatGPT Discord Bot" loading="lazy"/></div>
               <p class="works-name">ChatGPT Discord Bot</p>
               <p class="works-info">
-                **スキル：**
-*   **プログラミング言語:** JavaScript (Node.js)
-*   **ライブラリ/フレームワーク:** discord.js, openai (または axios, node-fetch)
-*   **API連携:** RESTful API (HTTP/JSON), WebSocket
-*   **デプロイ:** Heroku (または選択したクラウドサービス)
-*   **バージョン管理:** Git, GitHub
-*   **その他:** async/await を用いた非同期処理、環境変数管理</p>
+                プログラミング言語:
+JavaScript（Node.js）を使用してDiscordボットの主要ロジックを実装
+
+ライブラリ/フレームワーク:
+discord.js（Discord APIとの連携）
+openai（ChatGPTとの連携用OpenAI公式SDKまたはfetch/AxiosベースのHTTPクライアント）
+
+API連携:
+RESTful API（OpenAI APIなどとの通信）
+Discord APIとのWebSocket接続（discord.jsが内部的に処理）
+
+非同期処理:
+async/awaitによるPromiseベースの非同期I/O処理を活用
+
+デプロイ/インフラ:
+Fly.ioやRailwayなどへのデプロイに対応
+.envファイルまたはCLIベースでの環境変数管理による機密情報の安全な運用
+
+バージョン管理:
+Git/GitHubによるソースコード管理とCI/CD（GitHub Actionsとの連携も可能）
+
+その他:
+エラーハンドリング（try/catch＋on errorイベント処理）
+ロギング（console.logベース、またはwinstonなどの導入で拡張可能）
+コマンド分割・動的ロード・構造化に対応したBotアーキテクチャの設計
+本BotはChatGPTの技術支援を受けながら実装したもので、構造や処理内容の理解を深めながら自ら実装を行いました</p>
             </a>
             <a class="works-item" href="work3/index.html">
               <div class="works-img"><img src="img/ddd.webp" alt="DDDロボット制作スクール" loading="lazy"/></div>
