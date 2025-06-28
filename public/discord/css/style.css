@@ -30,6 +30,13 @@ main {
   padding: 0 15%;
 }
 
+section#function {
+  margin-top: 40px;
+}
+section#function div:first-child {
+ margin-left: 15px; 
+}
+
 dt, dd {
   font-size: 16px;
   font-family: "Yu Gothic", "Meiryo", sans-serif;
