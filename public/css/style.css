@@ -556,12 +556,14 @@ li {
 
   .works-list {
     justify-content: space-between;
+    flex-direction: column;
   }
 
   .works-item {
     flex: 0 0 48%;
     margin-right: 0;
     margin-bottom: 30px;
+    width: 100%;
   }
 
   /* Skill */
