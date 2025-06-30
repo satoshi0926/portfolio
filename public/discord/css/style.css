@@ -90,3 +90,16 @@ section#link .github {
 section#link .github a {
   background-color: #cfdff5;
 }
+
+/* タブレット用 */
+@media screen and (max-width: 959px) {
+}
+/* スマートフォン用 */
+@media screen and (max-width: 480px) {
+
+  section#about .screenshot img {
+    width: auto;
+    height: auto;
+  }
+
+}
