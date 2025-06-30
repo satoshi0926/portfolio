@@ -31,8 +31,14 @@
                 DiscordのサーバーにキャラBotを招待して、メッセージのやりとりを行います。<br>
                 PCとスマートフォン、ともにやり取りが可能です。
             </p>
-            <div class="screenshot">
-                <img src="/img/discord.webp">
+            <div id="screenshot">
+                <img id="screenshot-img" src="/img/discord.webp">
+            </div>
+            <!-- ポップアップ表示用 -->
+            <div id="overlay" style="display: none;">
+                <div id="popup">
+                    <img id="popup-img" src="">
+                </div>
             </div>
         </section>
         <section id="function">
@@ -82,5 +88,6 @@
             </ul>
         </section>
     </main>
+    <script src="/discord/js/main.js"></script>
 </body>
 </html>

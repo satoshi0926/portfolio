@@ -47,12 +47,35 @@ dt {
 }
 
 /* 概要 */
-section#about .screenshot {
+section#about #screenshot {
   text-align: center;
 }
-section#about .screenshot img {
+section#about #screenshot img {
   width: 621px;
   height: 513px;
+}
+/* ポップアップ用 */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+#popup img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 4px solid white;
+  box-shadow: 0 0 20px black;
+  border-radius: 8px;
+}
+#overlay {
+  cursor: pointer;
 }
 
 /* 機能一覧 */
@@ -97,7 +120,7 @@ section#link .github a {
 /* スマートフォン用 */
 @media screen and (max-width: 480px) {
 
-  section#about .screenshot img {
+  section#about #screenshot img {
     width: auto;
     height: auto;
   }
