@@ -570,7 +570,8 @@ li {
     width: 100%;
   }
   .works-img {
-    height: 310px;
+    height: auto;
+    margin-bottom: 15px;
   }
 
   /* Skill */
