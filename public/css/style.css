@@ -204,6 +204,10 @@ li {
   margin-right: 0;
 }
 
+.works-img {
+  height: 334px;
+}
+
 .works-img img {
   border: 1px solid #e6e6e6;
 }
