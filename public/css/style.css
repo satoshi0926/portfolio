@@ -569,6 +569,9 @@ li {
     margin-bottom: 30px;
     width: 100%;
   }
+  .works-img {
+    height: 310px;
+  }
 
   /* Skill */
   #skill ul {
