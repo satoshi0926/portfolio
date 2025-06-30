@@ -54,12 +54,21 @@ li {
 
 /* ヘッダー */
 #header {
+  display: flex;
+  justify-content: space-between;
   position: relative;
   width: 100%;
   min-height: 100vh;
   background-image: url('../img/mainvisual.webp');
   background-size: cover;
   background-position: center;
+}
+#header .back-to-top {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+#header .back-to-top a {
+  color: #fff;
 }
 #header .navi {
   display: flex;
