@@ -261,7 +261,20 @@
              <a class="works-item" href="books/index.php">
               <div class="works-img"><img src="img/books.webp" alt="本の紹介サイト" loading="lazy"/></div>
               <h3 class="works-name">Books</h3>
-              <p class="works-info">HTML/CSS/</p>
+              <dl class="works-info">
+                <dt>使用技術 / 制作環境</dt>
+                <dd>WordPressをベースに、WP_Query を活用した投稿一覧表示・絞り込み機能を構築<br>
+                    PHPによるテンプレート制御と、JavaScriptによるUI補助処理を併用</dd>
+                <dt>投稿構造 / 検索機能</dt>
+                <dd>カスタムフィールドで「著者名」「本の種類」「発売日」を管理<br>
+                    GETパラメータを用いた検索条件の保持とページネーションの連携を実装。</dd>
+                <dt>設計方針 / コーディング</dt>
+                <dd>WordPressの推奨するテンプレート構成に準拠<br>
+                    get_header() や get_footer() など基本的な構造管理を徹底し、可読性・再利用性を確保</dd>
+                <dt>プラグイン活用 / カスタマイズ方針</dt>
+                <dd>Smart Custom Fields などの信頼性の高いプラグインを導入し、<br>
+                    管理画面のUI構築や入力項目の管理を効率化</dd>
+              </dl>
             </a>
             <a class="works-item" href="discord/index.html">
               <div class="works-img"><img src="img/discord.webp" alt="ChatGPT Discord Bot" loading="lazy"/></div>
