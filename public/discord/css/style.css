@@ -34,7 +34,6 @@ main {
 section {
   margin: 30px 0;
 }
-
 /* dt, dd */
 dt, dd {
   font-size: 16px;
@@ -47,6 +46,10 @@ dt {
 }
 
 /* 概要 */
+section#about ul {
+  padding-left: 28px;
+  margin-bottom: 25px;
+}
 section#about #screenshot {
   text-align: center;
 }
@@ -85,6 +88,10 @@ section#function .box {
 section#function dt {
    background-color: #e0e0e0;
    width: 120px;
+}
+
+section#limit ul {
+  padding-left: 28px;
 }
 
 
