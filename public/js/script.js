@@ -8,7 +8,6 @@ $(function () {
     var target = $(href == "#" || href == "" ? "html" : href);
     var position = target.offset().top - navHeight;
     $("html, body").animate({ scrollTop: position, }, 300, "swing");
-    console.log("click");
     return false;
   });
 
@@ -16,8 +15,27 @@ $(function () {
   $("#js-page-top").on("click", function () {
     $("body,html").animate({ scrollTop: 0, }, 300);
     return false;
+  });
 
-    console.log("page-top");
+  // メール送信処理
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+
+    fetch('send.php', {
+      method: 'POST',
+      body: formData
+    })
+    .then(res => res.text())
+    .then(text => {
+      document.getElementById('responseMessage').style.display = 'block';
+      document.getElementById('responseMessage').textContent = text;
+      e.target.style.display = 'none';
+    })
+    .catch(() => {
+      document.getElementById('responseMessage').style.display = 'block';
+      document.getElementById('responseMessage').textContent = '送信中にエラーが発生しました。';
+    });
   });
 
 });
