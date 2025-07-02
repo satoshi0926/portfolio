@@ -29,10 +29,12 @@
   <!-- canonical -->
   <link rel="canonical" href="https://satoshi-portfolio-site-2025.netlify.app/">
 </head>
-
 <body>
+  <!--ローディング用-->
+  <div id="loading-screen">
+    <p class="loading-text">Loading<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span></p>
+  </div>
   <div class="wrapper">
-
     <!-- header -->
     <header class="header ">
       <div class="container">
@@ -343,6 +345,10 @@
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!--アニメーション用-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script type='text/javascript' src="js/animation.js"></script>
+  <!--ノーマル-->
   <script type='text/javascript' src="js/script.js"></script>
 </body>
 </html>
