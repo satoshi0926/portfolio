@@ -22,6 +22,21 @@ li {
 }
 
 /* header */
+header .back-to-top {
+  margin-top: 16px;
+}
+header .back-to-top a {
+    background-color: #e0e0e0;
+    color: #222;
+    padding: 10px;
+    border-radius: 5px;
+}
+header .back-to-top  a:hover {
+    background-color: #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
 header .site-title {
   text-align: center;
 }
@@ -114,11 +129,22 @@ section#link a {
 section#link .discord a {
   background-color: #fff3b0;
 }
+section#link .discord a:hover {
+  background-color: #ffe580;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
 section#link .github {
   margin-top: 50px;
 }
 section#link .github a {
   background-color: #cfdff5;
+}
+section#link .github a:hover {
+  background-color: #b7cff0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s, box-shadow 0.2s;
 }
 
 /* タブレット用 */

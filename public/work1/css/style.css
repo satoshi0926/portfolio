@@ -70,6 +70,10 @@ li {
 #header .back-to-top a {
   color: #fff;
 }
+#header .back-to-top a:hover {
+  color: #f00;
+}
+
 #header .navi {
   display: flex;
   justify-content: flex-end;
