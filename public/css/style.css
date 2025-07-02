@@ -66,6 +66,7 @@ li {
   align-items: center;
   justify-content: center;
   z-index: 9999;
+  transition: opacity 0.2s ease; /* ←これを追加 */
 }
 
 .loading-text {
