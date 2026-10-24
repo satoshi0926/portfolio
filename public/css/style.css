@@ -182,13 +182,19 @@ li {
 
 .scroll-indicator {
   position: absolute;
-  bottom: 30px;
+  bottom: 150px;
   left: 50%;
   transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
   opacity: 0;
+  background-color: lightgray;
+  border-radius: 50%;
   animation: arrow-blink 1.5s 3s infinite;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .scroll-indicator span {
@@ -199,6 +205,8 @@ li {
   border-bottom: 2px solid #333;
   transform: rotate(45deg);
   margin: 5px auto;
+    position: relative;
+  top: -2px;
 }
 
 @keyframes arrow-blink {
@@ -591,6 +599,10 @@ li {
   .mv-text {
     font-size: 14px;
     line-height: 1.7;
+  }
+
+  .scroll-indicator {
+    bottom: 200px;
   }
 
    /* About */
