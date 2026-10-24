@@ -125,26 +125,6 @@ section#link a {
   border-radius: 5px;
   font-size: 1.2em;
 }
-section#link .discord {
-  display: flex;
-  justify-content: center;
-}
-section#link .discord a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 0px;
-  width: 230px;
-  background-color: #fff3b0;
-}
-section#link .discord a:hover {
-  background-color: #ffe580;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.2s, box-shadow 0.2s;
-}
-section#link .discord a img {
-  max-width: 16%;
-}
 
 section#link .github {
   margin: 0 auto;
